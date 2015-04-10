@@ -1,3 +1,6 @@
 [submodule "eclipse.platform.swt"]
 	path = eclipse.platform.swt
 	url = git://git.eclipse.org/gitroot/platform/eclipse.platform.swt
+[submodule "rt.equinox.framework"]
+	path = rt.equinox.framework
+	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.framework
