@@ -1,0 +1,3 @@
+[submodule "eclipse.platform.swt"]
+	path = eclipse.platform.swt
+	url = git://git.eclipse.org/gitroot/platform/eclipse.platform.swt
