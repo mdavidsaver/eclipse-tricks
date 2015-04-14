@@ -1,3 +1,5 @@
+*~
+*.so
 build-swt
 build-launcher
 result-swt
