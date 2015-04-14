@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e -x
 
-[ -z "$JAVA_HOME" ] && export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+
+[ -z "$JAVA_HOME" ] && export JAVA_HOME=`ls -1d /usr/lib/jvm/java-7-openjdk-*|head -n1`
 
 ROOT=eclipse.platform.swt/bundles/org.eclipse.swt
 
