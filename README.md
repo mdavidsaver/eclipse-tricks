@@ -7,6 +7,12 @@ Install Debian packages
 * libgnomevfs2-dev
 * libgnomeui-dev
 
+Clone
+-----
+
+    $ git clone --recursive https://github.com/mdavidsaver/eclipse-tricks.git
+
+
 Building SWT C libraries from source
 ------------------------------------
 
