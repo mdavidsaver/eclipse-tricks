@@ -3,4 +3,4 @@
 	url = git://git.eclipse.org/gitroot/platform/eclipse.platform.swt
 [submodule "rt.equinox.framework"]
 	path = rt.equinox.framework
-	url = git://git.eclipse.org/gitroot/equinox/rt.equinox.framework
+	url = https://github.com/mdavidsaver/rt.equinox.framework.git
