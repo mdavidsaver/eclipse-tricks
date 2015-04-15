@@ -1,13 +1,17 @@
 #!/bin/sh
 set -e -x
 
-[ -z "$JAVA_HOME" ] && export JAVA_HOME=`ls -1d /usr/lib/jvm/java-7-openjdk-*|head -n1`
+# Debian arch: i386 or amd64
+DARCH=`dpkg-architecture -qDEB_HOST_ARCH`
+
+[ -z "$DARCH" ] && DARCH="unknown"
+[ -z "$JAVA_HOME" ] && export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-$DARCH
 
 ROOT=rt.equinox.framework/features/org.eclipse.equinox.executable.feature/library
 
 rm -rf build-launcher
 install -d build-launcher/gtk
-install -d result-launcher
+install -d result-$DARCH-launcher
 
 COM="$ROOT"
 
@@ -21,4 +25,4 @@ cd build-launcher/gtk
 
 make -f make_linux.mak
 
-cp eclipse_*.so ../../result-launcher/
+cp eclipse_*.so ../../result-$DARCH-launcher/
